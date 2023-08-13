@@ -15,7 +15,7 @@ You can get started with this project using the following steps:
    | -------------- | ---------------------------------------------------------------------------------------------------- |
    | 'DB_HOST'      | Your localhost or server's host.                                                                     |
    | 'DB_USER'      | You may need to create a user with read and write privilages in your mySQL Database.                 |
-   | 'DB_PASS'      | You must provide the password for the above user.                                                    |
+   | 'DB_PASS'      | You must provide the password for the above user. Refer to the last point for help regarding the same. |
    | 'DB_NAME'      | The name of the mySQL database that you may have created. I have set the default name as contacts_db. |
    | 'MAIL_TO'      | The email address where you want the email to be sent on successful form submission. |
    | 'MAIL_FROM'    | The email address you have set in your SMTP XAMPP configuration. Other email addresses may lead to unexpected behavior. |  
@@ -41,3 +41,12 @@ You can get started with this project using the following steps:
 
 6. The viewable address/url may look something like this on Windows with XAMPP:
    `localhost/ContactForm/`
+
+7. You can set up the user using the following steps:
+   a. Go to localhost/phpmyadmin . This assumes you have XAMPP installed and working on Windows. You can create a new empty database from phpmyadmin if you already haven't. 
+      Click on 1 and then 2 as shown in the image below:
+      ![Alt text](helpcreateuser1.png)
+   b. Give the repective values as shown in the picture below, scroll down and hit GO! 
+      ![Alt text](helpcreateuser2.png)
+
+ENJOY!
