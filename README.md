@@ -28,7 +28,7 @@ You can get started with this project using the following steps:
     subject VARCHAR(255) NOT NULL,
     message TEXT NOT NULL,
     ip_address VARCHAR(18) NOT NULL,
-    timestamp VARCHAR(255) CURRENT_TIMESTAMP,
+    timestamp VARCHAR(255)
     )`
 
 5. **For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
