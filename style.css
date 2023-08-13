@@ -123,6 +123,14 @@ body {
     position: relative;
     left: 25%;
   }
+
+  .mail_s {
+    font-size: 0.8rem!important;
+  }
+
+  .mail_e {
+    font-size: 0.8rem!important;
+  }
 }
 
 .error {
@@ -142,5 +150,15 @@ body {
 
 
 .confirmation_error {
+  color: #ff4d4d;
+}
+
+.mail_s {
+  font-size: 0.7rem;
+  color: green;
+}
+
+.mail_e {
+  font-size: 0.7rem;
   color: #ff4d4d;
 }

@@ -5,6 +5,7 @@ $name = $phone = $email = $subject = $message = '';
 $nameErr = $phoneErr = $emailErr = $subjectErr = $messageErr = '';
 
 $confirmation = "";
+$mailsent =  false;
 $isMailSuccess = false;
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 0);
@@ -15,6 +16,8 @@ function sendMail($name, $phone, $email)
     $subject = "Email Notification";
     $message = "$name user has successfully submitted the contact form with the email address $email and phone number $phone.";
     $headers = "From: abdullahanzar@gmail.com";
+    global $mailsent;
+    $mailsent = true;
     try {
         $sendMail = mail($to, $subject, $message, $headers);
         if ($sendMail) {
@@ -175,6 +178,12 @@ if (isset($_POST['submit'])) {
             <div class="confirmation <?php echo strpos($confirmation, "already exists") ||
                 strpos($confirmation, "error") ? htmlspecialchars("confirmation_error") : null ?>">
                 <?php echo $confirmation ?>
+            </div>
+            <div class="<?php echo $isMailSuccess ? "mail_s" : "mail_e" ?>">
+                <?php echo $mailsent ?  (
+                    $isMailSuccess ? "Email regarding submission successfully sent to the website admin." : 
+                    "Email regarding submission failed. Don't worry, your data is still saved to the database. Our servers may be having an SMTP configuration problem."
+                ) : ""; ?>
             </div>
             <button type="submit" name="submit">Submit</button>
         </form>

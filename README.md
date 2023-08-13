@@ -16,7 +16,7 @@ You can get started with this project using the following steps:
    | 'DB_HOST'      | Your localhost or server's host.                                                                     |
    | 'DB_USER'      | You may need to create a user with read and write privilages in your mySQL Database.                 |
    | 'DB_PASS'      | You must provide the password for the above user.                                                    |
-   | 'DB_NAME'      | The name of the mySQL database that you may have created. I have set the default name as contact_db. |
+   | 'DB_NAME'      | The name of the mySQL database that you may have created. I have set the default name as contacts_db. |
    | 'MAIL_TO'      | The email address where you want the email to be sent on successful form submission. |
 
 4. Please note the database should contain a table named contact_form with the following command / columns:
@@ -30,7 +30,7 @@ You can get started with this project using the following steps:
     message TEXT NOT NULL,
     ip_address VARCHAR(18) NOT NULL,
     timestamp VARCHAR(255)
-    )`
+    );`
 
 5. **For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
    secure external libraries PHPMailer, etc. could not be used.**
