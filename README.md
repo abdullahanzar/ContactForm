@@ -5,12 +5,18 @@ You can get started with this project using the following steps:
 1. Clone the repository to your local machine.
 2. Go to config/database.php file.
    ![Alt text](image.png)
+
    You may see some text like this.
+
 3. Please edit these to your local or server configurations:
-   'DB_HOST' : Your localhost or server's host.
-   'DB_USER' : You may need to create a user with read and write privilages in your mySQL Database.
-   'DB_PASS' : You must provide the password for the above user.
-   'DB_NAME' : The name of the mySQL database that you may have created. I have set the default name as contact_db.
+
+   | CONFIGURATIONS | RELATED SETTINGS                                                                                     |
+   | -------------- | ---------------------------------------------------------------------------------------------------- |
+   | 'DB_HOST'      | Your localhost or server's host.                                                                     |
+   | 'DB_USER'      | You may need to create a user with read and write privilages in your mySQL Database.                 |
+   | 'DB_PASS'      | You must provide the password for the above user.                                                    |
+   | 'DB_NAME'      | The name of the mySQL database that you may have created. I have set the default name as contact_db. |
+
 4. Please note the database should contain a table named contact_form with the following command / columns:
 
    `CREATE TABLE contact_form (
@@ -21,9 +27,8 @@ You can get started with this project using the following steps:
     subject VARCHAR(255) NOT NULL,
     message TEXT NOT NULL,
     ip_address VARCHAR(18) NOT NULL,
-    timestamp VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)`
+    timestamp VARCHAR(255) CURRENT_TIMESTAMP,
+    )`
 
-5. For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
-   secure external libraries PHPMailer, etc.
+5. <span style="color: red;">For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
+   secure external libraries PHPMailer, etc.</span>
