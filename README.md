@@ -33,6 +33,9 @@ You can get started with this project using the following steps:
     timestamp VARCHAR(255)
     );`
 
+   You may copy/paste and run the above mySQL command in localhost/phpmyadmin > SQL, like:
+   ![Alt text](phpmyadminhelp.png)
+
 5. **For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
    secure external libraries PHPMailer, etc. could not be used.**
 
