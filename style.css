@@ -106,9 +106,12 @@ body {
     font-size: 1.25rem;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 2.5rem;
+    padding: 2rem;
     width: 60%;
     height: fit-content;
+  }
+  .contact-form form div {
+    padding: 0.2rem;
   }
 }
 
@@ -125,11 +128,11 @@ body {
   }
 
   .mail_s {
-    font-size: 0.8rem!important;
+    font-size: 0.8rem !important;
   }
 
   .mail_e {
-    font-size: 0.8rem!important;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -147,7 +150,6 @@ body {
   font-size: 1rem;
   color: green;
 }
-
 
 .confirmation_error {
   color: #ff4d4d;
