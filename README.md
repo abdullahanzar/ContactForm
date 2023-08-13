@@ -2,7 +2,8 @@ Welcome to the ContactForm repo. This is a PHP Server Side application which ren
 
 You can get started with this project using the following steps:
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine. Copy it to your htdocs folder if you are using XAMPP.
+
 2. Go to config/database.php file.
    ![Alt text](image.png)
 
@@ -33,3 +34,6 @@ You can get started with this project using the following steps:
 
 5. **For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
    secure external libraries PHPMailer, etc.**
+
+6. The viewable address/url may look something like this on Windows with XAMPP:
+   `localhost/ContactForm/`
