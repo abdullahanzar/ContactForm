@@ -7,15 +7,14 @@ $nameErr = $phoneErr = $emailErr = $subjectErr = $messageErr = '';
 $confirmation = "";
 $mailsent =  false;
 $isMailSuccess = false;
-error_reporting(E_ALL & ~E_NOTICE);
-ini_set('display_errors', 0);
+
 
 function sendMail($name, $phone, $email)
 {
     $to = MAIL_TO;
     $subject = "Email Notification";
-    $message = "$name user has successfully submitted the contact form with the email address $email and phone number $phone.";
-    $headers = "From: abdullahanzar@gmail.com";
+    $message = "$name user has successfully submitted the contact form with the email address $email and phone number $phone.";    
+    $headers = 'From: ' . MAIL_FROM . '\r\n';
     global $mailsent;
     $mailsent = true;
     try {

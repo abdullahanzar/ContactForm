@@ -5,7 +5,7 @@ You can get started with this project using the following steps:
 1. Clone the repository to your local machine. Copy it to your htdocs folder if you are using XAMPP.
 
 2. Go to config/database.php file.
-   ![Alt text](image.png)
+   ![Alt text](help.png)
 
    You may see some text like this.
 
@@ -18,6 +18,7 @@ You can get started with this project using the following steps:
    | 'DB_PASS'      | You must provide the password for the above user.                                                    |
    | 'DB_NAME'      | The name of the mySQL database that you may have created. I have set the default name as contacts_db. |
    | 'MAIL_TO'      | The email address where you want the email to be sent on successful form submission. |
+   | 'MAIL_FROM'    | The email address you have set in your SMTP XAMPP configuration. Other email addresses may lead to unexpected behavior. |  
 
 4. Please note the database should contain a table named contact_form with the following command / columns:
 
