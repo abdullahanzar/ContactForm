@@ -11,7 +11,7 @@ ini_set('display_errors', 0);
 
 function sendMail($name, $phone, $email)
 {
-    $to = "anzar.sapiens@gmail.com";
+    $to = MAIL_TO;
     $subject = "Email Notification";
     $message = "$name user has successfully submitted the contact form with the email address $email and phone number $phone.";
     $headers = "From: abdullahanzar@gmail.com";
