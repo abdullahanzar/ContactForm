@@ -5,7 +5,7 @@ You can get started with this project using the following steps:
 1. Clone the repository to your local machine. Copy it to your htdocs folder if you are using XAMPP.
 
 2. Go to config/database.php file.
-   ![Alt text](help.png)
+   ![Alt text](readme_help_images/help.png)
 
    You may see some text like this.
 
@@ -34,7 +34,7 @@ You can get started with this project using the following steps:
     );`
 
    You may copy/paste and run the above mySQL command in localhost/phpmyadmin > SQL, like:
-   ![Alt text](phpmyadminhelp.png)
+   ![Alt text](readme_help_images/phpmyadminhelp.png)
 
 5. **For the mail to be sent successfully, you must have SMTP setup successfully on your local machine or server failing which there may be a handled exception. This is required as only corePHP is allowed in the project, so
    secure external libraries PHPMailer, etc. could not be used.**
@@ -45,8 +45,8 @@ You can get started with this project using the following steps:
 7. You can set up the user using the following steps:
    a. Go to localhost/phpmyadmin . This assumes you have XAMPP installed and working on Windows. You can create a new empty database from phpmyadmin if you already haven't. 
       Click on 1 and then 2 as shown in the image below:
-      ![Alt text](helpcreateuser1.png)
+      ![Alt text](readme_help_images/helpcreateuser1.png)
    b. Give the repective values as shown in the picture below, scroll down and hit GO! 
-      ![Alt text](helpcreateuser2.png)
+      ![Alt text](readme_help_images/helpcreateuser2.png)
 
 ENJOY!
